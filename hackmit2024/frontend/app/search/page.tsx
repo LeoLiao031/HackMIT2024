@@ -185,8 +185,8 @@ export default function SearchPage() {
       <div className="grid grid-cols-4 overflow-hidden max-h-full h-full ">
         {/* Left sidebar */}
         <aside className="col-span-1 bg-slate-100 overflow-y-auto">
-          <h2 className="text-lg border-t-2 font-semibold p-6 bg-white text-black mb-4">
-            Your explorations
+          <h2 className="text-lg border-t-2 font-semibold p-4 bg-white text-black ">
+            Your Exploration
           </h2>
           <div className="p-4">
             <BigAccordion data={bigAccordionDummyData} />

@@ -28,7 +28,6 @@ export function AccordionNode(props: AccordionNodeProps) {
       const y = rect.top + window.scrollY; 
 
       console.log(`Accordion clicked at x: ${x}, y: ${y}`);
-      // Optionally update the position state
       props.setPosition({ x, y });
     }
   };
@@ -42,7 +41,7 @@ export function AccordionNode(props: AccordionNodeProps) {
           </Typography>
         </AccordionTrigger>
         <Box sx={accordionChildStyle}>
-          <AccordionContent className="ml-2">{props.children}</AccordionContent>
+          <AccordionContent className="ml-4">{props.children}</AccordionContent>
         </Box>
       </AccordionItem>
     </Accordion>
@@ -55,5 +54,7 @@ const accordionChildStyle = {
 
 const accordionTextStyle = {
   color: textBlack,
-  fontSize: "14px"
+  fontSize: "14px",
+  marginLeft: "8px"
+
 }
